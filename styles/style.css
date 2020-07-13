@@ -1,3 +1,9 @@
+/* обнуляю сразу все внешние и внутренние отступы */
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -13,13 +19,106 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  height: 568px;
   width: 568px;
+  height: 568px;
+  margin-top: 64px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+}
+.logo {
+  z-index: 1;
+}
+.logo_place_header {
+  width: 183px;
+  height: 32px;
+  position: absolute;
+  left: 64px;
+  top: 30px;
+}
+
+.header__title {
+  width: 730px;
+  justify-content: center;
+  align-self: center;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  margin-left: 64px;
+}
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  width: 388px;
+  font-weight: normal;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+}
+.header__link {
+  text-decoration: none;
+}
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.description {
+  position: relative;
+  width: 80%;
+  min-height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;;
+  display: flex;
+  justify-content: space-between;
+
+}
+.description__two-colums {
+  width: 175px;
+}
+.desctiprion_two-colums_brief {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2f80ed;
+}
+
+.description__two-colums_main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.description__two-colums_paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.description__two-colums_span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description__two-colums_paragraph:last-child {
+  margin-bottom: 0px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
