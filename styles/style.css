@@ -3,7 +3,9 @@
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 }
-
+li {
+  list-style-type: none;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -14,7 +16,6 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -24,12 +25,6 @@
   background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
-
-.content {
-  display: flex;
-  justify-content: center;
-}
-
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   width: 568px;
@@ -79,20 +74,24 @@
   right: 0;
   z-index: 1;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .description {
-  position: relative;
   width: 80%;
   min-height: 300px;
   margin-top: 100px;
-  margin-bottom: 100px;;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
-
 }
 .description__two-colums {
   width: 175px;
 }
-.desctiprion_two-colums_brief {
+.desctiprion__two-colums_brief {
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
@@ -119,6 +118,107 @@
 
 .description__two-colums_paragraph:last-child {
   margin-bottom: 0px;
+}
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.digits__section-title {
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.digits__section-subtitle {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+.digits__table {
+  width: 1100px;
+  margin: 0 auto 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.digits__table_cell {
+  width: 250px;
+  margin-top: 60px;
+}
+.digits__table_cell_heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.digits__table_cell_text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 20px
+}
+.digits__table_cell_text:last-child {
+  padding-bottom: 0px;
+}
+
+.feynman {
+  width: 100%;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+}
+.feynman__title {
+  position: relative;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  margin-bottom: 70px;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 70px;
+}
+
+.feynman__subtitle {
+  position: relative;
+  width: 648px; /* Сделал такой же размер как и у заголовка, т.к размера в брифе нету и он растягивается на всю страницу.*/
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.feynman__images {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
