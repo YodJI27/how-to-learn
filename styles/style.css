@@ -62,6 +62,7 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  margin: 0 0 0 0;
 }
 .header__main-illustration {
   width: 765px;
@@ -100,6 +101,7 @@
 .two-colums__main-text {
   width: 80%;
   min-width: 784px;
+  margin: 0 0 0 0;
 }
 
 .two-colums__paragraph {
@@ -369,6 +371,7 @@
   font-weight: normal;
   text-decoration: none;
   list-style-type: none;
+  margin: 0 0 0 0;
 }
 .footer__social-icon {
   margin-right: 10px;
