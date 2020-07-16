@@ -274,7 +274,7 @@
   font-size: 24px;
   font-weight: bold;
   color: #ffffff;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .table__text_theme_dark {
@@ -284,14 +284,15 @@
   color: #ffffff;
   margin: 0 0 0 0;
 }
-
 .kaufman__triangle {
   background-image: url(/images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
   width: 877px;
   height: 877px;
   position: absolute;
   top: 0px;
   right: -210px;
+
 }
 .footer {
   display: flex;
