@@ -231,7 +231,6 @@
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
-
 }
 .section-title__theme_dark {
   width: 60%;
@@ -288,7 +287,6 @@
 
 .kaufman__triangle {
   background-image: url(/images/kaufman-triangle.svg);
-  background-position: top;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -351,6 +349,7 @@
 .footer__column-links {
   margin-bottom: 16px;
   list-style-type: none;
+  padding: 0 0 0 0;
 }
 .footer__column-link {
   color: #ffffff;
