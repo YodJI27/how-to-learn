@@ -1,10 +1,6 @@
-/* обнуляю сразу все внешние и внутренние отступы */
 * {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-}
-li {
-  list-style-type: none;
 }
 .page {
   min-width: 1100px;
@@ -36,9 +32,9 @@ li {
 }
 .logo {
   z-index: 3;
+  width: 183px;
 }
 .logo_place_header {
-  width: 183px;
   height: 32px;
   position: absolute;
   left: 64px;
@@ -135,11 +131,6 @@ li {
   justify-content: space-between;
   width: 1100px;
 }
-.kaufman__table_theme_dark {
-  margin: 0 auto 90px auto;
-  position: relative;
-  z-index: 1;
-}
 .digits__table {
   margin: 0 auto 100px auto;
 }
@@ -165,6 +156,7 @@ li {
 .table__cell {
   width: 250px;
   margin-top: 60px;
+  list-style-type: none;
 }
 .table__heading {
   line-height: 1.15;
@@ -176,7 +168,7 @@ li {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 .table__text:last-child {
   padding-bottom: 0px;
@@ -197,7 +189,6 @@ li {
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
-  margin-bottom: 70px;
   text-align: center;
   z-index: 1;
   margin-bottom: 70px;
@@ -261,7 +252,7 @@ li {
   font-weight: normal;
   display: flex;
   justify-content: center;
-  color: #ffffff
+  color: #ffffff;
 }
 
 .table__theme_dark {
@@ -276,6 +267,7 @@ li {
 .table__cell_theme_dark {
   margin-top: 80px;
   width: 200px;
+  list-style-type: none;
 }
 
 .table__heading_theme_dark {
@@ -283,14 +275,14 @@ li {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #ffffff
+  color: #ffffff;
 }
 
 .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  color: #ffffff
+  color: #ffffff;
 }
 
 .kaufman__triangle {
@@ -307,6 +299,7 @@ li {
   justify-content: center;
   min-height: 350px;
   background-color: #1f1f1f;
+ 
 }
 
 .footer__columns {
@@ -317,7 +310,6 @@ li {
   justify-content: space-between;
 }
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
 .footer__author {
@@ -358,6 +350,7 @@ li {
 
 .footer__column-links {
   margin-bottom: 16px;
+  list-style-type: none;
 }
 .footer__column-link {
   color: #ffffff;
@@ -365,6 +358,7 @@ li {
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
+  list-style-type: none;
 }
 .footer__social-icon {
   margin-right: 10px;
