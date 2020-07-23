@@ -70,6 +70,24 @@
 @import url("../page/footer/__author/footer__author.css");
 
 
+<<<<<<< HEAD
+=======
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description {
+  width: 80%;
+  min-height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.two-colums {
+  display: flex;
+  justify-content: space-between;
+}
+>>>>>>> 75bb4fc5eb013ed1c977512e508506d289f8f95e
 
 
 
@@ -77,3 +95,248 @@
 
 
 
+<<<<<<< HEAD
+=======
+.section-title {
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.section-subtitle {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  list-style-type: none;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin: 0 0 0 0;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 20px;
+  margin: 0 0 0 0;
+}
+.table__text:last-child {
+  padding-bottom: 0px;
+}
+
+.feynman {
+  width: 100%;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+  padding-top: 100px;
+}
+.feynman__title {
+  position: relative;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  text-align: center;
+  z-index: 1;
+  margin: 0px 0px 0px 0px;
+}
+
+.feynman__subtitle {
+  position: relative;
+  width: 648px; /* Сделал такой же размер как и у заголовка, т.к размера в брифе нету и он растягивается на всю страницу.*/
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+  margin: 70px 0px 0px 0px;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.feynman__images {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 0;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.kaufman {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+}
+.section-title_theme_dark {
+  width: 60%;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  margin: 90px 0px 20px 0px;
+}
+
+.section-subtitle_theme_dark {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  margin: 0 0 0 0;
+}
+
+.table_theme_dark {
+  margin: 0 auto 90px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  position: relative;
+  z-index: 1;
+}
+.table__cell_theme_dark {
+  margin-top: 80px;
+  width: 200px;
+  list-style-type: none;
+  color: white;
+  margin-right: 0;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 0 0;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0 0 0 0;
+}
+.kaufman__triangle {
+  position: absolute;
+  top: 0px;
+  right: -210px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 877px;
+  height: 877px;
+  z-index: 0;
+
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo_place_footer {
+  height: 35px;
+}
+.footer__author {
+  color: #ffffff;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0 18px 0;
+
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer__column-heading {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.footer__column-links {
+  margin-bottom: 16px;
+  list-style-type: none;
+  padding: 0 0 0 0;
+}
+.footer__column-link {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 0 0 0;
+}
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+/* и элемента с модификатором вида ключ-значение */
+>>>>>>> 75bb4fc5eb013ed1c977512e508506d289f8f95e
