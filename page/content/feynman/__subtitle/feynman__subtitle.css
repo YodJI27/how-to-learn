@@ -1,0 +1,10 @@
+.feynman__subtitle {
+    position: relative;
+    width: 648px; /* Сделал такой же размер как и у заголовка, т.к размера в брифе нету и он растягивается на всю страницу.*/
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+    margin: 70px 0px 0px 0px;
+  }
